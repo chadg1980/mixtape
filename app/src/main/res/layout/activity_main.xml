@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.h.chad.mixtape.MainActivity">
+        <!-- Create a new mix button -->
+        <TextView
+            android:id="@+id/createNewMix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorNewMixBackground"
+            android:text="+ Create New Mixtape"
+            android:textAlignment="center"
+            android:textColor="@color/colorNewMixText"
+            android:textSize="25dp" />
+        <!-- Main part of main screen -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Section Title -->
+            <TextView
+                android:id="@+id/myMixtapes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Mixtapes"
+                android:textColor="@color/colorBlack"
+                android:textSize="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!-- All these items are information for the mix -->
+
+                <!-- left side -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <!-- name of the mix -->
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="150dp"
+
+                        android:layout_height="150dp"
+                        android:src="@drawable/workout" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Workout mix" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="45 minutes" />
+                </LinearLayout>
+
+                <!-- Right Side -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <!-- name of the mix -->
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+
+                        android:src="@drawable/workout" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Workout mix" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="45 minutes" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Section Title -->
+            <TextView
+                android:id="@+id/friendsMixtapes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Friends Mixtapes"
+                android:textColor="@color/colorBlack"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
