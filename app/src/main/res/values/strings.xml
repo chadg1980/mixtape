@@ -14,7 +14,7 @@
     <string name="track3">Track 3</string>
     <string name="addTrack">+ Add Track</string>
     <string name="mainScreen">
-        This is the main screen\n
+        This is the Main activity\n
         This is the first screen the user sees when they start the app\n
         This screen shows what mixtapes (playlists)  are available to them\n
         From here the user can either create a new mixtape,\n
@@ -23,6 +23,7 @@
         This would require all data to be in a cloud database.
     </string>
     <string name="createMixtape">
+        This is the Create New Mixstapes activity\n
         The screen is for creating new mixtapes\n
         Each mixtape is a series of music tracks\n
         This screen will start looking empty\n
@@ -35,6 +36,7 @@
         and go to the search screen to find tracks to add.
     </string>
     <string name="searchTracks">
+        This is the Search activity\n
         The search tracks screen is for searching for tracks to add.\n
         Technical hurldes would be a way to sort cloud based music\n
         A search bar to find Artists, genres, similar music etc.\n
@@ -42,6 +44,7 @@
 
     </string>
     <string name="nowPlaying">
+        This is the Now Playing activity \n
         Now playing will show the cover art on top with controls such as play\\pause\\next track\n
         Below the control buttons will be the track list that will link\n
         to a page that will give more information about the artist, \n
@@ -51,6 +54,7 @@
         
     </string>
     <string name="trackInformation">
+        This is the Information activity \n
         This view gives a user information about\n
         the song/album/artist etc.\n
         Then show the user similar songs/artists that are available.\n
