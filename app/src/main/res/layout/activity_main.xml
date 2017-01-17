@@ -5,19 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context="com.h.chad.mixtape.MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/mainScreen"
+            android:textColor="@color/colorBlack" />
         <!-- Create a new mix button -->
         <TextView
             android:id="@+id/createNewMix"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorNewMixBackground"
-            android:text="+ Create New Mixtape"
+            android:text="@string/createNewMixtape"
             android:textAlignment="center"
             android:textColor="@color/colorNewMixText"
             android:textSize="25dp" />
@@ -25,15 +31,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/colorNewMixText"
             android:orientation="vertical">
             <!-- Section Title -->
             <TextView
                 android:id="@+id/myMixtapes"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="My Mixtapes"
-                android:textColor="@color/colorBlack"
-                android:textSize="25dp" />
+                style="@style/headerTextview"
+                android:text="My Mixtapes" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -43,76 +47,125 @@
 
                 <!-- left side -->
                 <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:padding="10dp">
+                    android:id="@+id/playWorkoutMix"
+                    style="@style/mixLinearLayout">
 
                     <!-- name of the mix -->
                     <ImageView
                         android:id="@+id/imageView"
                         android:layout_width="150dp"
-
                         android:layout_height="150dp"
                         android:src="@drawable/workout" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Workout mix" />
+                        android:text="@string/workoutMix" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="45 minutes" />
+                        android:text="@string/workoutMixtime"/>
+
                 </LinearLayout>
 
                 <!-- Right Side -->
 
                 <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:padding="10dp">
+                    android:id="@+id/studyMix"
+                    style="@style/mixLinearLayout">
 
                     <!-- name of the mix -->
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-
                         android:src="@drawable/workout" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Workout mix" />
+                        android:text="@string/studyMix" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="45 minutes" />
+                        android:text="@string/studyMixTime" />
                 </LinearLayout>
-
-
             </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/colorNewMixText"
             android:orientation="vertical">
             <!-- Section Title -->
             <TextView
                 android:id="@+id/friendsMixtapes"
+                style="@style/headerTextview"
+                android:text="Friends Mixtapes" />
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Friends Mixtapes"
-                android:textColor="@color/colorBlack"
-                android:textSize="25dp" />
+                android:orientation="horizontal">
+                <!-- All these items are information for the mix -->
+
+                <!-- left side -->
+                <LinearLayout
+                    android:id="@+id/roadtripMix"
+                    style="@style/mixLinearLayout">
+
+                    <!-- name of the mix -->
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/workout" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Creator: Allen" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/roadtripMix" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/roadtripMixTime" />
+                </LinearLayout>
+
+                <!-- Right Side -->
+
+                <LinearLayout
+                    android:id="@+id/deGrassi"
+                    style="@style/mixLinearLayout">
+
+                    <!-- name of the mix -->
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/workout" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Creator: Caitlin Bree" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/degrassi" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/degrassiTime" />
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
-
-
     </LinearLayout>
 </ScrollView>

@@ -15,6 +15,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".createMix"
+            android:label="Create Mixtape"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".searchForMusic"
+            android:label="Search for Track"
+            android:parentActivityName=".createMix" />
+        <activity
+            android:name=".Playing"
+            android:label="Now Playing"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TrackInformation"
+            android:label="More Information"
+            android:parentActivityName=".Playing"/>
     </application>
 
 </manifest>

@@ -1,3 +1,60 @@
 <resources>
     <string name="app_name">MixTape</string>
+    <string name="createNewMixtape">+ Create New Mixtape</string>
+    <string name="workoutMix">Workout Mix</string>
+    <string name="workoutMixtime">Time: 45:37</string>
+    <string name="studyMix">Study Mix</string>
+    <string name="studyMixTime">Time: 1:01:10</string>
+    <string name="roadtripMix">Roadtrip 1995 mix</string>
+    <string name="roadtripMixTime">Time: 39:42</string>
+    <string name="degrassi">I Love Degrassi!</string>
+    <string name="degrassiTime">Time: 23:33</string>
+    <string name="track1">Track 1</string>
+    <string name="track2">Track 2</string>
+    <string name="track3">Track 3</string>
+    <string name="addTrack">+ Add Track</string>
+    <string name="mainScreen">
+        This is the main screen\n
+        This is the first screen the user sees when they start the app\n
+        This screen shows what mixtapes (playlists)  are available to them\n
+        From here the user can either create a new mixtape,\n
+        or play a mixtape created by themselves or a friend\n
+        The technical hurdles will be to share mixtapes amoung friends.\n
+        This would require all data to be in a cloud database.
+    </string>
+    <string name="createMixtape">
+        The screen is for creating new mixtapes\n
+        Each mixtape is a series of music tracks\n
+        This screen will start looking empty\n
+        Ths user needs to add tracks\n
+        After the track is added, this view will show the\n
+        song name, artist name, album name, a button to preview the song\n
+        A link to share the mixtape with a friend or group of friends. \n
+        This screen will keep a running total of time, let the user order the tracks\n
+        From here the user can press the Add Track button\n
+        and go to the search screen to find tracks to add.
+    </string>
+    <string name="searchTracks">
+        The search tracks screen is for searching for tracks to add.\n
+        Technical hurldes would be a way to sort cloud based music\n
+        A search bar to find Artists, genres, similar music etc.\n
+        A list of available tracks would be below the search bar.
+
+    </string>
+    <string name="nowPlaying">
+        Now playing will show the cover art on top with controls such as play\\pause\\next track\n
+        Below the control buttons will be the track list that will link\n
+        to a page that will give more information about the artist, \n
+        as well as give suggestions for similar tracks.\n
+        I don\'t know all the technical hurles,\n
+        but I think owning the license to the music would be one.
+        
+    </string>
+    <string name="trackInformation">
+        This view gives a user information about\n
+        the song/album/artist etc.\n
+        Then show the user similar songs/artists that are available.\n
+        The tecnical challeges here would be to get the information from some library.
+
+    </string>
 </resources>

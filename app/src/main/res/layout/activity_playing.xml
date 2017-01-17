@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_playing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.h.chad.mixtape.Playing"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nowPlaying"
+        android:textColor="@color/colorBlack"
+        android:padding="10dp"/>
+    <TextView
+        android:id="@+id/track0"
+        style="@style/trackList"
+        android:text="@string/track1"/>
+    <TextView
+        android:id="@+id/track1"
+        android:text="@string/track2"
+        style="@style/trackList"/>
+    <TextView
+        android:id="@+id/track2"
+        style="@style/trackList"
+        android:text="@string/track3"/>
+</LinearLayout>
